@@ -110,13 +110,13 @@ PL__ASSUME_NONNULL_BEGIN
 #pragma mark Pin Edges
 
 /** Pins an edge of the view to a given edge of another view. */
-- (NSLayoutConstraint *)autoPinEdge:(ALEdge)edge toEdge:(ALEdge)toEdge ofView:(ALView *)otherView;
+- (NSLayoutConstraint *)autoPinEdge:(ALEdge)edge toEdge:(ALEdge)toEdge ofView:(ALView *)otherView PL__SWIFT_NAME(auto(pin:to:of:));
 
 /** Pins an edge of the view to a given edge of another view with an offset. */
-- (NSLayoutConstraint *)autoPinEdge:(ALEdge)edge toEdge:(ALEdge)toEdge ofView:(ALView *)otherView withOffset:(CGFloat)offset;
+- (NSLayoutConstraint *)autoPinEdge:(ALEdge)edge toEdge:(ALEdge)toEdge ofView:(ALView *)otherView withOffset:(CGFloat)offset PL__SWIFT_NAME(auto(pin:to:of:offset:));
 
 /** Pins an edge of the view to a given edge of another view with an offset as a maximum or minimum. */
-- (NSLayoutConstraint *)autoPinEdge:(ALEdge)edge toEdge:(ALEdge)toEdge ofView:(ALView *)otherView withOffset:(CGFloat)offset relation:(NSLayoutRelation)relation;
+- (NSLayoutConstraint *)autoPinEdge:(ALEdge)edge toEdge:(ALEdge)toEdge ofView:(ALView *)otherView withOffset:(CGFloat)offset relation:(NSLayoutRelation)relation PL__SWIFT_NAME(auto(pin:to:of:offset:relation:));
 
 
 #pragma mark Align Axes

@@ -74,13 +74,13 @@ class iOSDemo4ViewController: UIViewController {
             redLabel.autoMatch(.width, to: .width, of: blueLabel, withMultiplier: 0.6)
             
             // The redLabel is positioned below the blueLabel, with its leading edge to its superview, and trailing edge to the greenView
-            redLabel.autoPinEdge(.top, to: .bottom, of: blueLabel, withOffset: smallPadding)
+            redLabel.auto(pin: .top, to: .bottom, of: blueLabel, offset: smallPadding)
             redLabel.autoPinEdge(toSuperviewEdge: .leading, withInset: smallPadding)
             redLabel.autoPinEdge(toSuperviewEdge: .bottom, withInset: largePadding)
             
             // The greenView is positioned below the blueLabel, with its leading edge to the redLabel, and trailing edge to its superview
-            greenView.autoPinEdge(.leading, to: .trailing, of: redLabel, withOffset: largePadding)
-            greenView.autoPinEdge(.top, to: .bottom, of: blueLabel, withOffset: smallPadding)
+            greenView.auto(pin: .leading, to: .trailing, of: redLabel, offset: largePadding)
+            greenView.auto(pin: .top, to: .bottom, of: blueLabel, offset: smallPadding)
             greenView.autoPinEdge(toSuperviewEdge: .trailing, withInset: smallPadding)
             
             // Match the greenView's height to its width (keeping a consistent aspect ratio)

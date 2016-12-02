@@ -83,7 +83,7 @@ class iOSDemo7ViewController: UIViewController {
             redViewEdgeConstraint = redView.autoPinEdge(toSuperviewEdge: .bottom, withInset: 150.0)
         } else {
             blueViewHeightConstraint?.constant = blueViewInitialHeight
-            redViewEdgeConstraint = redView.autoPinEdge(.top, to: .bottom, of: blueView, withOffset: 20.0)
+            redViewEdgeConstraint = redView.auto(pin: .top, to: .bottom, of: blueView, offset: 20.0)
         }
         
         super.updateViewConstraints()

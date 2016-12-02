@@ -67,8 +67,8 @@ class iOSDemo2ViewController: UIViewController {
             var previousView: UIView?
             for view in views {
                 if let previousView = previousView {
-                    view.autoPinEdge(.left, to: .right, of: previousView)
-                    view.autoPinEdge(.top, to: .bottom, of: previousView)
+                    view.auto(pin: .left, to: .right, of: previousView)
+                    view.auto(pin: .top, to: .bottom, of: previousView)
                 }
                 previousView = view
             }
