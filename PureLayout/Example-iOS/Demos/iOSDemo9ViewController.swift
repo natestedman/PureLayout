@@ -68,7 +68,7 @@ class iOSDemo9ViewController: UIViewController {
             // in the middle of the redView's top and bottom margins (causing it to be slightly closer to the top of the redView, since the
             // redView has a much larger bottom margin than top margin).
             yellowView.autoAlignAxis(toSuperviewMarginAxis: .horizontal)
-            yellowView.autoMatch(.height, to: .height, of: redView, withMultiplier: 0.5)
+            yellowView.auto(match: .height, to: .height, of: redView, multiplier: 0.5)
             
             // Since yellowView.preservesSuperviewLayoutMargins is NO by default, it will not preserve (inherit) its superview's margins,
             // and instead will just have the default margins of: {8.0, 8.0, 8.0, 8.0} which will apply to its subviews (greenView)

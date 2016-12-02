@@ -134,19 +134,19 @@ PL__ASSUME_NONNULL_BEGIN
 #pragma mark Match Dimensions
 
 /** Matches a dimension of the view to a given dimension of another view. */
-- (NSLayoutConstraint *)autoMatchDimension:(ALDimension)dimension toDimension:(ALDimension)toDimension ofView:(ALView *)otherView;
+- (NSLayoutConstraint *)autoMatchDimension:(ALDimension)dimension toDimension:(ALDimension)toDimension ofView:(ALView *)otherView PL__SWIFT_NAME(auto(match:to:of:));
 
 /** Matches a dimension of the view to a given dimension of another view with an offset. */
-- (NSLayoutConstraint *)autoMatchDimension:(ALDimension)dimension toDimension:(ALDimension)toDimension ofView:(ALView *)otherView withOffset:(CGFloat)offset;
+- (NSLayoutConstraint *)autoMatchDimension:(ALDimension)dimension toDimension:(ALDimension)toDimension ofView:(ALView *)otherView withOffset:(CGFloat)offset PL__SWIFT_NAME(auto(match:to:of:offset:));
 
 /** Matches a dimension of the view to a given dimension of another view with an offset as a maximum or minimum. */
-- (NSLayoutConstraint *)autoMatchDimension:(ALDimension)dimension toDimension:(ALDimension)toDimension ofView:(ALView *)otherView withOffset:(CGFloat)offset relation:(NSLayoutRelation)relation;
+- (NSLayoutConstraint *)autoMatchDimension:(ALDimension)dimension toDimension:(ALDimension)toDimension ofView:(ALView *)otherView withOffset:(CGFloat)offset relation:(NSLayoutRelation)relation PL__SWIFT_NAME(auto(match:to:of:offset:relation:));
 
 /** Matches a dimension of the view to a multiple of a given dimension of another view. */
-- (NSLayoutConstraint *)autoMatchDimension:(ALDimension)dimension toDimension:(ALDimension)toDimension ofView:(ALView *)otherView withMultiplier:(CGFloat)multiplier;
+- (NSLayoutConstraint *)autoMatchDimension:(ALDimension)dimension toDimension:(ALDimension)toDimension ofView:(ALView *)otherView withMultiplier:(CGFloat)multiplier PL__SWIFT_NAME(auto(match:to:of:multiplier:));
 
 /** Matches a dimension of the view to a multiple of a given dimension of another view as a maximum or minimum. */
-- (NSLayoutConstraint *)autoMatchDimension:(ALDimension)dimension toDimension:(ALDimension)toDimension ofView:(ALView *)otherView withMultiplier:(CGFloat)multiplier relation:(NSLayoutRelation)relation;
+- (NSLayoutConstraint *)autoMatchDimension:(ALDimension)dimension toDimension:(ALDimension)toDimension ofView:(ALView *)otherView withMultiplier:(CGFloat)multiplier relation:(NSLayoutRelation)relation PL__SWIFT_NAME(auto(match:to:of:multiplier:relation:));
 
 
 #pragma mark Set Dimensions

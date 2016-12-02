@@ -45,7 +45,7 @@ class iOSDemo11ViewController: UIViewController {
             scrollView.autoPinEdgesToSuperviewEdges(with: UIEdgeInsets.zero)
             
             contentView.autoPinEdgesToSuperviewEdges(with: UIEdgeInsets.zero)
-            contentView.autoMatch(.width, to: .width, of: view)
+            contentView.auto(match: .width, to: .width, of: view)
             
             blueLabel.autoPinEdge(toSuperviewEdge: .top, withInset: 20)
             blueLabel.autoPinEdge(toSuperviewEdge: .leading, withInset: 20)

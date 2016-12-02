@@ -33,7 +33,7 @@ class iOSDemo6ViewController: UIViewController {
         if (!didSetupConstraints) {
             // Center the blueView in its superview, and match its width to its height
             blueView.autoCenterInSuperview()
-            blueView.autoMatch(.width, to: .height, of: blueView)
+            blueView.auto(match: .width, to: .height, of: blueView)
             
             // Make sure the blueView is always at least 20 pt from any edge
             blueView.autoPin(toTopLayoutGuideOf: self, withInset: 20.0, relation: .greaterThanOrEqual)

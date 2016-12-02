@@ -59,7 +59,7 @@ class iOSDemo1ViewController: UIViewController {
             // Red view is positioned at the bottom right corner of the blue view, with the same width, and a height of 40 pt
             redView.auto(pin: .top, to: .bottom, of: blueView)
             redView.auto(pin: .left, to: .right, of: blueView)
-            redView.autoMatch(.width, to: .width, of: blueView)
+            redView.auto(match: .width, to: .width, of: blueView)
             redView.autoSetDimension(.height, toSize: 40.0)
             
             // Yellow view is positioned 10 pt below the red view, extending across the screen with 20 pt insets from the edges,
@@ -73,7 +73,7 @@ class iOSDemo1ViewController: UIViewController {
             // with its height twice the height of the yellow view and its width fixed to 150 pt
             greenView.auto(pin: .top, to: .bottom, of: yellowView, offset: 10.0)
             greenView.autoAlignAxis(toSuperviewAxis: .vertical)
-            greenView.autoMatch(.height, to: .height, of: yellowView, withMultiplier: 2.0)
+            greenView.auto(match: .height, to: .height, of: yellowView, multiplier: 2.0)
             greenView.autoSetDimension(.width, toSize: 150.0)
             
             didSetupConstraints = true

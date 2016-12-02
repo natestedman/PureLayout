@@ -68,7 +68,7 @@ class iOSDemo7ViewController: UIViewController {
             blueViewHeightConstraint = blueView.autoSetDimension(.height, toSize: blueViewInitialHeight)
             
             redView.autoSetDimension(.height, toSize: 50.0)
-            redView.autoMatch(.width, to: .height, of: blueView, withMultiplier: 1.5)
+            redView.auto(match: .width, to: .height, of: blueView, multiplier: 1.5)
             redView.autoAlignAxis(toSuperviewAxis: .vertical)
             
             didSetupConstraints = true
