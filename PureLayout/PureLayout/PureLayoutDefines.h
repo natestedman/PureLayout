@@ -55,6 +55,12 @@
 #   define PL__GENERICS(class, ...)         class
 #endif
 
+#ifdef NS_SWIFT_NAME
+#   define PL__SWIFT_NAME(...) NS_SWIFT_NAME(__VA_ARGS__)
+#else
+#   define PL__SWIFT_NAME(...)
+#endif
+
 // Using generics with NSArray is so common in PureLayout that it gets a dedicated preprocessor macro for better readability.
 #define PL__NSArray_of(type)                PL__GENERICS(NSArray, type)
 
