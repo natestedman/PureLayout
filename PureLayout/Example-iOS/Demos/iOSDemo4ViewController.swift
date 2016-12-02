@@ -66,7 +66,7 @@ class iOSDemo4ViewController: UIViewController {
             blueLabel.setContentCompressionResistancePriority(UILayoutPriorityRequired, for: .vertical)
             
             // Position the single-line blueLabel at the top of the screen spanning the width, with some small insets
-            blueLabel.autoPin(toTopLayoutGuideOf: self, withInset: smallPadding)
+            blueLabel.autoPinToTopLayoutGuide(of: self, inset: smallPadding)
             blueLabel.autoPinEdge(toSuperviewEdge: .leading, withInset: smallPadding)
             blueLabel.autoPinEdge(toSuperviewEdge: .trailing, withInset: smallPadding)
             

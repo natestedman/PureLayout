@@ -64,7 +64,7 @@ class iOSDemo8ViewController: UIViewController {
             */
             
             NSLayoutConstraint.autoSetIdentifier("Pin Container View Edges") {
-                self.containerView.autoPin(toTopLayoutGuideOf: self, withInset: 10.0)
+                self.containerView.autoPinToTopLayoutGuide(of: self, inset: 10.0)
                 self.containerView.autoPinEdgesToSuperviewEdges(with: UIEdgeInsets(top: 0.0, left: 10.0, bottom: 10.0, right: 10.0), excludingEdge: .top)
             }
 

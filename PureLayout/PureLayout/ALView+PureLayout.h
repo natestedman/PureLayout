@@ -195,16 +195,16 @@ PL__ASSUME_NONNULL_BEGIN
 #if TARGET_OS_IPHONE
 
 /** Pins the top edge of the view to the top layout guide of the given view controller with an inset. Available on iOS only. */
-- (NSLayoutConstraint *)autoPinToTopLayoutGuideOfViewController:(UIViewController *)viewController withInset:(CGFloat)inset;
+- (NSLayoutConstraint *)autoPinToTopLayoutGuideOfViewController:(UIViewController *)viewController withInset:(CGFloat)inset PL__SWIFT_NAME(autoPinToTopLayoutGuide(of:inset:));
 
 /** Pins the top edge of the view to the top layout guide of the given view controller with an inset as a maximum or minimum. Available on iOS only. */
-- (NSLayoutConstraint *)autoPinToTopLayoutGuideOfViewController:(UIViewController *)viewController withInset:(CGFloat)inset relation:(NSLayoutRelation)relation;
+- (NSLayoutConstraint *)autoPinToTopLayoutGuideOfViewController:(UIViewController *)viewController withInset:(CGFloat)inset relation:(NSLayoutRelation)relation PL__SWIFT_NAME(autoPinToTopLayoutGuide(of:inset:relation:));
 
 /** Pins the bottom edge of the view to the bottom layout guide of the given view controller with an inset. Available on iOS only. */
-- (NSLayoutConstraint *)autoPinToBottomLayoutGuideOfViewController:(UIViewController *)viewController withInset:(CGFloat)inset;
+- (NSLayoutConstraint *)autoPinToBottomLayoutGuideOfViewController:(UIViewController *)viewController withInset:(CGFloat)inset PL__SWIFT_NAME(autoPinToBottomLayoutGuide(of:inset:));
 
 /** Pins the bottom edge of the view to the bottom layout guide of the given view controller with an inset as a maximum or minimum. Available on iOS only. */
-- (NSLayoutConstraint *)autoPinToBottomLayoutGuideOfViewController:(UIViewController *)viewController withInset:(CGFloat)inset relation:(NSLayoutRelation)relation;
+- (NSLayoutConstraint *)autoPinToBottomLayoutGuideOfViewController:(UIViewController *)viewController withInset:(CGFloat)inset relation:(NSLayoutRelation)relation PL__SWIFT_NAME(autoPinToBottomLayoutGuide(of:inset:relation:));
 
 #endif /* TARGET_OS_IPHONE */
 

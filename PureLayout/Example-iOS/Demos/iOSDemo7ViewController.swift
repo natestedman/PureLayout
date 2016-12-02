@@ -61,7 +61,7 @@ class iOSDemo7ViewController: UIViewController {
         
         // Remember, this code is just the initial constraint setup which only happens the first time this method is called
         if (!didSetupConstraints) {
-            blueView.autoPin(toTopLayoutGuideOf: self, withInset: 20.0)
+            blueView.autoPinToTopLayoutGuide(of: self, inset: 20.0)
             blueView.autoAlignAxis(toSuperviewAxis: .vertical)
             
             blueView.auto(set: .width, to: 50.0)

@@ -36,8 +36,8 @@ class iOSDemo6ViewController: UIViewController {
             blueView.auto(match: .width, to: .height, of: blueView)
             
             // Make sure the blueView is always at least 20 pt from any edge
-            blueView.autoPin(toTopLayoutGuideOf: self, withInset: 20.0, relation: .greaterThanOrEqual)
-            blueView.autoPin(toBottomLayoutGuideOf: self, withInset: 20.0, relation: .greaterThanOrEqual)
+            blueView.autoPinToTopLayoutGuide(of: self, inset: 20.0, relation: .greaterThanOrEqual)
+            blueView.autoPinToBottomLayoutGuide(of: self, inset: 20.0, relation: .greaterThanOrEqual)
             blueView.autoPinEdge(toSuperviewEdge: .left, withInset: 20.0, relation: .greaterThanOrEqual)
             blueView.autoPinEdge(toSuperviewEdge: .right, withInset: 20.0, relation: .greaterThanOrEqual)
             

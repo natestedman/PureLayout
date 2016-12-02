@@ -59,7 +59,7 @@ class iOSDemo2ViewController: UIViewController {
             (views as NSArray).autoMatchViewsDimension(.width)
             
             // Pin the red view 20 pt from the top layout guide of the view controller
-            redView.autoPin(toTopLayoutGuideOf: self, withInset: 20.0)
+            redView.autoPinToTopLayoutGuide(of: self, inset: 20.0)
             
             // Loop over the views, attaching the left edge to the previous view's right edge,
             // and the top edge to the previous view's bottom edge

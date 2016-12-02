@@ -50,7 +50,7 @@ class iOSDemo9ViewController: UIViewController {
     override func updateViewConstraints() {
         if (!didSetupConstraints) {
             // Before layout margins were introduced, this is a typical way of giving a subview some padding from its superview's edges
-            blueView.autoPin(toTopLayoutGuideOf: self, withInset: 10.0)
+            blueView.autoPinToTopLayoutGuide(of: self, inset: 10.0)
             blueView.autoPinEdgesToSuperviewEdges(with: UIEdgeInsets(top: 0, left: 10.0, bottom: 10.0, right: 10.0), excludingEdge: .top)
             
             // Set the layoutMargins of the blueView, which will have an effect on subviews of the blueView that attach to
