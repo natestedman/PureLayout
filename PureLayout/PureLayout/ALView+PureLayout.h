@@ -175,19 +175,19 @@ PL__ASSUME_NONNULL_BEGIN
 #pragma mark Constrain Any Attributes
 
 /** Constrains an attribute of the view to a given attribute of another view. */
-- (NSLayoutConstraint *)autoConstrainAttribute:(ALAttribute)attribute toAttribute:(ALAttribute)toAttribute ofView:(ALView *)otherView;
+- (NSLayoutConstraint *)autoConstrainAttribute:(ALAttribute)attribute toAttribute:(ALAttribute)toAttribute ofView:(ALView *)otherView PL__SWIFT_NAME(auto(constrain:to:of:));
 
 /** Constrains an attribute of the view to a given attribute of another view with an offset. */
-- (NSLayoutConstraint *)autoConstrainAttribute:(ALAttribute)attribute toAttribute:(ALAttribute)toAttribute ofView:(ALView *)otherView withOffset:(CGFloat)offset;
+- (NSLayoutConstraint *)autoConstrainAttribute:(ALAttribute)attribute toAttribute:(ALAttribute)toAttribute ofView:(ALView *)otherView withOffset:(CGFloat)offset PL__SWIFT_NAME(auto(constrain:to:of:offset:));
 
 /** Constrains an attribute of the view to a given attribute of another view with an offset as a maximum or minimum. */
-- (NSLayoutConstraint *)autoConstrainAttribute:(ALAttribute)attribute toAttribute:(ALAttribute)toAttribute ofView:(ALView *)otherView withOffset:(CGFloat)offset relation:(NSLayoutRelation)relation;
+- (NSLayoutConstraint *)autoConstrainAttribute:(ALAttribute)attribute toAttribute:(ALAttribute)toAttribute ofView:(ALView *)otherView withOffset:(CGFloat)offset relation:(NSLayoutRelation)relation PL__SWIFT_NAME(auto(constrain:to:of:offset:relation:));
 
 /** Constrains an attribute of the view to a given attribute of another view with a multiplier. */
-- (NSLayoutConstraint *)autoConstrainAttribute:(ALAttribute)attribute toAttribute:(ALAttribute)toAttribute ofView:(ALView *)otherView withMultiplier:(CGFloat)multiplier;
+- (NSLayoutConstraint *)autoConstrainAttribute:(ALAttribute)attribute toAttribute:(ALAttribute)toAttribute ofView:(ALView *)otherView withMultiplier:(CGFloat)multiplier PL__SWIFT_NAME(auto(constrain:to:of:multiplier:));
 
 /** Constrains an attribute of the view to a given attribute of another view with a multiplier as a maximum or minimum. */
-- (NSLayoutConstraint *)autoConstrainAttribute:(ALAttribute)attribute toAttribute:(ALAttribute)toAttribute ofView:(ALView *)otherView withMultiplier:(CGFloat)multiplier relation:(NSLayoutRelation)relation;
+- (NSLayoutConstraint *)autoConstrainAttribute:(ALAttribute)attribute toAttribute:(ALAttribute)toAttribute ofView:(ALView *)otherView withMultiplier:(CGFloat)multiplier relation:(NSLayoutRelation)relation PL__SWIFT_NAME(auto(constrain:to:of:multiplier:relation:));
 
 
 #pragma mark Pin to Layout Guides (iOS only)

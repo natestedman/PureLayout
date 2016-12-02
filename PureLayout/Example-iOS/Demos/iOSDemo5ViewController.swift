@@ -51,13 +51,13 @@ class iOSDemo5ViewController: UIViewController {
             blueView.autoSetDimensions(to: CGSize(width: 150.0, height: 150.0))
             
             // Use a cross-attribute constraint to constrain an ALAxis (Horizontal) to an ALEdge (Bottom)
-            redView.autoConstrainAttribute(.horizontal, to: .bottom, of: blueView)
+            redView.auto(constrain: .horizontal, to: .bottom, of: blueView)
             
             redView.auto(align: .vertical, toSameOf: blueView)
             redView.autoSetDimensions(to: CGSize(width: 50.0, height: 50.0))
             
             // Use another cross-attribute constraint to place the purpleLabel's baseline on the blueView's top edge
-            purpleLabel.autoConstrainAttribute(.baseline, to: .top, of: blueView)
+            purpleLabel.auto(constrain: .baseline, to: .top, of: blueView)
             
             purpleLabel.auto(align: .vertical, toSameOf: blueView)
             
