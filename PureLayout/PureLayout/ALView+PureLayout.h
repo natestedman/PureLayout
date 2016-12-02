@@ -122,13 +122,13 @@ PL__ASSUME_NONNULL_BEGIN
 #pragma mark Align Axes
 
 /** Aligns an axis of the view to the same axis of another view. */
-- (NSLayoutConstraint *)autoAlignAxis:(ALAxis)axis toSameAxisOfView:(ALView *)otherView;
+- (NSLayoutConstraint *)autoAlignAxis:(ALAxis)axis toSameAxisOfView:(ALView *)otherView PL__SWIFT_NAME(auto(align:toSameOf:));
 
 /** Aligns an axis of the view to the same axis of another view with an offset. */
-- (NSLayoutConstraint *)autoAlignAxis:(ALAxis)axis toSameAxisOfView:(ALView *)otherView withOffset:(CGFloat)offset;
+- (NSLayoutConstraint *)autoAlignAxis:(ALAxis)axis toSameAxisOfView:(ALView *)otherView withOffset:(CGFloat)offset PL__SWIFT_NAME(auto(align:toSameOf:offset:));
 
 /** Aligns an axis of the view to the same axis of another view with a multiplier. */
-- (NSLayoutConstraint *)autoAlignAxis:(ALAxis)axis toSameAxisOfView:(ALView *)otherView withMultiplier:(CGFloat)multiplier;
+- (NSLayoutConstraint *)autoAlignAxis:(ALAxis)axis toSameAxisOfView:(ALView *)otherView withMultiplier:(CGFloat)multiplier PL__SWIFT_NAME(auto(align:toSameOf:multiplier:));
 
 
 #pragma mark Match Dimensions
