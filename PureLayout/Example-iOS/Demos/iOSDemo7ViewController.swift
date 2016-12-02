@@ -64,10 +64,10 @@ class iOSDemo7ViewController: UIViewController {
             blueView.autoPin(toTopLayoutGuideOf: self, withInset: 20.0)
             blueView.autoAlignAxis(toSuperviewAxis: .vertical)
             
-            blueView.autoSetDimension(.width, toSize: 50.0)
-            blueViewHeightConstraint = blueView.autoSetDimension(.height, toSize: blueViewInitialHeight)
+            blueView.auto(set: .width, to: 50.0)
+            blueViewHeightConstraint = blueView.auto(set: .height, to: blueViewInitialHeight)
             
-            redView.autoSetDimension(.height, toSize: 50.0)
+            redView.auto(set: .height, to: 50.0)
             redView.auto(match: .width, to: .height, of: blueView, multiplier: 1.5)
             redView.autoAlignAxis(toSuperviewAxis: .vertical)
             

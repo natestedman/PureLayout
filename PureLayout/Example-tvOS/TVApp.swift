@@ -22,7 +22,7 @@ class TVViewController: UIViewController {
         (views as NSArray).autoDistributeViews(along: .horizontal, alignedTo: .horizontal, withFixedSpacing: 50)
         views.forEach { view in
             view.autoAlignAxis(toSuperviewAxis: .horizontal)
-            view.autoSetDimension(.height, toSize: 300)
+            view.auto(set: .height, to: 300)
         }
     }
 }

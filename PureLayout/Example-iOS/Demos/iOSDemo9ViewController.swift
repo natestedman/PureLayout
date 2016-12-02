@@ -73,7 +73,7 @@ class iOSDemo9ViewController: UIViewController {
             // Since yellowView.preservesSuperviewLayoutMargins is NO by default, it will not preserve (inherit) its superview's margins,
             // and instead will just have the default margins of: {8.0, 8.0, 8.0, 8.0} which will apply to its subviews (greenView)
             greenView.autoPinEdges(toSuperviewMarginsExcludingEdge: .bottom)
-            greenView.autoSetDimension(.height, toSize: 50.0)
+            greenView.auto(set: .height, to: 50.0)
             
             didSetupConstraints = true
         }

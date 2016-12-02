@@ -152,13 +152,13 @@ PL__ASSUME_NONNULL_BEGIN
 #pragma mark Set Dimensions
 
 /** Sets the view to a specific size. */
-- (PL__NSArray_of(NSLayoutConstraint *) *)autoSetDimensionsToSize:(CGSize)size;
+- (PL__NSArray_of(NSLayoutConstraint *) *)autoSetDimensionsToSize:(CGSize)size PL__SWIFT_NAME(autoSetDimensions(to:));
 
 /** Sets the given dimension of the view to a specific size. */
-- (NSLayoutConstraint *)autoSetDimension:(ALDimension)dimension toSize:(CGFloat)size;
+- (NSLayoutConstraint *)autoSetDimension:(ALDimension)dimension toSize:(CGFloat)size PL__SWIFT_NAME(auto(set:to:));
 
 /** Sets the given dimension of the view to a specific size as a maximum or minimum. */
-- (NSLayoutConstraint *)autoSetDimension:(ALDimension)dimension toSize:(CGFloat)size relation:(NSLayoutRelation)relation;
+- (NSLayoutConstraint *)autoSetDimension:(ALDimension)dimension toSize:(CGFloat)size relation:(NSLayoutRelation)relation PL__SWIFT_NAME(auto(set:to:relation:));
 
 
 #pragma mark Set Content Compression Resistance & Hugging
